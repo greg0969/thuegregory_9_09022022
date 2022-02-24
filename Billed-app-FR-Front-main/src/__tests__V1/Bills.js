@@ -1,12 +1,14 @@
-import { screen, fireEvent, getByTestId } from "@testing-library/dom";
-import BillsUI from "../views/BillsUI.js";
-import { bills } from "../fixtures/bills.js";
-import { ROUTES, ROUTES_PATH } from "../constants/routes";
-import Bills from "../containers/Bills.js";
-import { localStorageMock } from "../__mocks__/localStorage.js";
-import Router from "../app/Router";
-import store from "../__mocks__/store";
-import { formatDate } from "../app/format";
+/**
+ * @jest-environment jsdom
+ */
+
+import {screen, waitFor} from "@testing-library/dom"
+import BillsUI from "../views/BillsUI.js"
+import { bills } from "../fixtures/bills.js"
+import { ROUTES_PATH} from "../constants/routes.js";
+import {localStorageMock} from "../__mocks__/localStorage.js";
+
+import router from "../app/Router.js";
 
 describe("Given I am connected as an employee", () => {
   Object.defineProperty(window, "localStorage", { value: localStorageMock });
