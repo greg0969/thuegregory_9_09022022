@@ -56,15 +56,6 @@ describe("Given I am connected as an employee", () => {
       })
   }) 
 
-  
-  // describe("When I am on Bills page, dates should be deplay from ealiest to latest", () => {
-  //   test("Then, should return error",  () => {
-  //     document.body.innerHTML = BillsUI({ data: bills });
-  //     const dates = screen.getAllByText(/^([1-9]|[12][0-9]|3[01])[ ]\b.{3}\b[.][ ]\d{2}$/i).map(a => a.innerHTML);
-  //     expect(dates).toEqual(['4 Avr. 04','3 Mar. 03','2 Fév. 02','1 Jan. 01'])
-  //   })
-  // })
-
   describe("When I click on first eye icon", () => {
     test("Then modal should open", () => {
       
