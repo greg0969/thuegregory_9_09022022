@@ -74,7 +74,7 @@ describe("Given I am connected as an employee", () => {
          const inputJustificative = screen.getByTestId("file");
          expect(inputJustificative).toBeTruthy();
 
-         // Simulate if the file is an jpg extension
+         // Simulate if the file have jpg extension
          inputJustificative.addEventListener("change", mockHandleChangeFile);
          fireEvent.change(inputJustificative, {
             target: {

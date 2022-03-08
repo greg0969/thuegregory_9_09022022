@@ -82,6 +82,20 @@ const mockedBills = {
       "pct": 20
     })
   },
+  post(bill) {
+    return Promise.resolve({
+      "type": "Restaurants et bars",
+      "name": "Vol Paris Londres",
+      "date": "2022-02-15",
+      "amount": 200,
+      "vat": 70,
+      "pct": 30,
+      "commentary": "Commentary",
+      "fileUrl": "../img/0.jpg",
+      "fileName": "test.jpg",
+      "status": "pending"
+    })
+  }
 }
 
 export default {
