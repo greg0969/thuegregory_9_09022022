@@ -30,7 +30,7 @@ export default class NewBill {
     formData.append('email', email)
     const formats = ["jpg", "jpeg", "png"];
 
-    if (formats.includes(fileExtension)) {
+    if (formats.includes(fileExtension.toLowerCase())) {
       this.handleStore(formData, fileName);
     }
 
